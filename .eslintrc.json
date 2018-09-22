@@ -1,0 +1,22 @@
+{
+    "extends": "eslint-config-hss",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "globals": {
+        "JSContext": false
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "html"
+    ],
+    "rules": {
+        "no-floating-decimal": 1
+    }
+}
