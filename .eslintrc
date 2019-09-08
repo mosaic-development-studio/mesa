@@ -1,5 +1,5 @@
 {
-    "extends": "eslint-config-hss",
+    "extends": "eslint-config-mosaic",
     "env": {
         "browser": true,
         "es6": true,
@@ -10,12 +10,9 @@
         "JSContext": false
     },
     "parserOptions": {
-        "ecmaVersion": 8,
+        "ecmaVersion": 9,
         "sourceType": "module"
     },
-    "plugins": [
-        "html"
-    ],
     "rules": {
         "no-floating-decimal": 1
     }
