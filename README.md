@@ -1,17 +1,27 @@
 # mesa
-A static site builder.
+A serverless builder meant for simple, performant websites.
 
-## Offerings
-* Accessibility
-* JSON LD
-* Performance
-* SEO
+Install
+```
+npm i
+```
 
-## Dev
-* HTML minification
-* linting HTML, SCSS, JS
+Build
+```
+make build
+```
 
-### TODO
-* inline styles
-* Above/below the fold bundling
-* create a style inject system?
+Lint
+```
+make lint
+```
+
+Watch
+```
+make watch
+```
+
+View built site
+```
+open dist/index.html
+```
