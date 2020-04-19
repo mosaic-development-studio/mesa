@@ -70,7 +70,7 @@ gulp.task(TASKS.WATCH, () => {
     gulp.watch(SOURCE.STATIC, gulp.series([TASKS.STATIC]));
     gulp.watch(SOURCE.TEMPLATES, gulp.series([TASKS.HTML]));
     gulp.watch(WATCH_FILES.SASS, gulp.series([TASKS.SASS]));
-    gulp.watch(WATCH_FILES.JAVASCRIPT, gulp.series([TASKS.WEBPACK]));
+    gulp.watch(WATCH_FILES.JAVASCRIPT, gulp.series([TASKS.JAVASCRIPT]));
 });
 
 gulp.task(TASKS.BUILD, gulp.series([
