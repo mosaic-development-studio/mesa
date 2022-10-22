@@ -22,12 +22,8 @@
     "sass": "^1.55.0",
     "sass-lint": "^1.13.1"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "scripts": {
     "build": "gulp build",
-    "lint": "eslint --ext=.js . && sass-lint -c -v -q",
     "start": "gulp default"
   },
   "repository": {
@@ -39,8 +35,5 @@
   "bugs": {
     "url": "https://github.com/mskalandunas/mesa/issues"
   },
-  "homepage": "https://github.com/mskalandunas/mesa#readme",
-  "dependencies": {
-    "pre-commit": "^1.2.2"
-  }
+  "homepage": "https://github.com/mskalandunas/mesa#readme"
 }
