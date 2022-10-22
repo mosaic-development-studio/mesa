@@ -15,7 +15,7 @@ const htmlmin = require('gulp-htmlmin');
 const include = require('gulp-include');
 const { Logger } = require('mosaic-logger');
 const postcss = require('gulp-postcss');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task(TASKS.CSS, () => gulp.src(SOURCE.CSS)
@@ -64,7 +64,7 @@ gulp.task(TASKS.STATIC, () => {
     return gulp.src(SOURCE.STATIC).pipe(gulp.dest(`${__dirname}/${DESTINATION.DIRECTORY}`));
 });
 
-gulp.task(TASKS.WATCH, () => {
+gulp.task(TASKS.WATCH, async () => {
     gulp.watch(SOURCE.CSS, gulp.series([TASKS.CSS]));
     gulp.watch(SOURCE.HTML, gulp.series([TASKS.HTML]));
     gulp.watch(SOURCE.STATIC, gulp.series([TASKS.STATIC]));

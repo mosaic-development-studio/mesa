@@ -3,26 +3,24 @@
   "version": "1.0.0",
   "description": "A static site builder.",
   "main": "gulpfile.js",
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "cssnano": "^4.1.10",
-    "eslint": "^4.19.1",
+    "@babel/preset-env": "^7.19.4",
+    "cssnano": "^5.1.13",
+    "eslint": "^8.26.0",
     "eslint-config-mosaic": "^0.1.2",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-include": "^2.3.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-include": "^2.4.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "mosaic-logger": "^0.1.0",
-    "pre-commit": "^1.2.2",
-    "sass-lint": "^1.12.1"
+    "sass": "^1.55.0",
+    "sass-lint": "^1.13.1"
   },
   "pre-commit": [
     "lint"
@@ -41,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/mskalandunas/mesa/issues"
   },
-  "homepage": "https://github.com/mskalandunas/mesa#readme"
+  "homepage": "https://github.com/mskalandunas/mesa#readme",
+  "dependencies": {
+    "pre-commit": "^1.2.2"
+  }
 }
