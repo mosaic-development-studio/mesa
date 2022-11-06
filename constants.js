@@ -10,7 +10,7 @@ const DESTINATION = {
 
 const SOURCE = {
   CSS: CLIENT_DIRECTORY + '/**/*.css',
-  HTML: CLIENT_DIRECTORY + '/*.html',
+  HTML: CLIENT_DIRECTORY + '/**/*.html',
   JAVASCRIPT: CLIENT_DIRECTORY + '/js/index.js',
   SASS: CLIENT_DIRECTORY + '/sass/base.scss',
   STATIC: [
